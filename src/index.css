@@ -4,15 +4,33 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  width: 100vw;
+  height: 100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #f5ebf6;
+  background: linear-gradient(0deg, #004e92 0%, #000428 100%);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("./assets/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: url("./assets/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url("./assets/fonts/Montserrat-SemiBold.woff") format("woff");
 }
