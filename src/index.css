@@ -13,8 +13,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #f5ebf6;
-  background: linear-gradient(0deg, #004e92 0%, #000428 100%);
+  --dark-blue: #000428;
+  --deep-blue: #004e92;
+  --main-typography: #f5ebf6;
+
+  color: var(--main-typography);
+  background: linear-gradient(0deg, var(--deep-blue) 0%, var(--dark-blue) 100%);
+}
+
+body {
+  padding: 40px 58px;
 }
 
 @font-face {
