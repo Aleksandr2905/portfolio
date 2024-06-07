@@ -7,14 +7,6 @@ export const Wrapper = styled.div`
   gap: 24px;
 `;
 
-// export const Image = styled.img`
-//   width: 180px;
-//   height: 60px;
-//   padding: 8px;
-//   border-radius: 8px;
-//   background-color: #fff;
-// `;
-
 export const School = styled.h3`
   font-family: Montserrat, sans-serif;
   font-size: 24px;
