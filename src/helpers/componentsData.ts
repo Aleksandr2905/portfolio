@@ -1,4 +1,4 @@
-import { IAbout, INavigate, ISocial } from "./interface";
+import { IAbout, INavigate, ISocial, ITechSkills } from "./interface";
 
 export const navigation: INavigate[] = [
   { href: "#about", title: "About me" },
@@ -39,4 +39,22 @@ export const social: ISocial[] = [
     icon: "linkedin",
     ariaLabel: "Link to linkedin",
   },
+];
+
+export const techSkills: ITechSkills[] = [
+  { icon: "html" },
+  { icon: "css" },
+  { icon: "javascript" },
+  { icon: "typescript" },
+  { icon: "react" },
+  { icon: "redux" },
+  { icon: "nodejs" },
+  { icon: "express" },
+  { icon: "mongodb" },
+  { icon: "postman" },
+  { icon: "firebase" },
+  { icon: "git" },
+  { icon: "figma" },
+  { icon: "tailwind" },
+  { icon: "styled-components" },
 ];

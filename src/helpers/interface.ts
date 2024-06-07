@@ -24,3 +24,7 @@ export interface IButton {
   icon: string;
   write?: boolean;
 }
+
+export interface ITechSkills {
+  icon: string;
+}
