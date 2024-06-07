@@ -30,6 +30,12 @@ export const Button = styled.a<{ $write?: boolean }>`
 
   &:hover {
     transform: scale(1.05);
+    background: var(--dark-blue);
+    color: var(--main-typography);
     box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.7);
+
+    & svg {
+      fill: var(--main-typography);
+    }
   }
 `;
