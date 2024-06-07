@@ -8,8 +8,8 @@ const About: React.FC = () => {
     <Container id="about">
       <Title title="About me" />
       <s.Wrapper>
-        {aboutText.map((item, index) => (
-          <s.Text key={index}>{item.text}</s.Text>
+        {aboutText.map(({ text }, index) => (
+          <s.Text key={index}>{text}</s.Text>
         ))}
       </s.Wrapper>
     </Container>

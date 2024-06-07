@@ -1,0 +1,35 @@
+import styled from "styled-components";
+
+export const Button = styled.a<{ $write?: boolean }>`
+  display: flex;
+  align-items: center;
+  min-width: 202px;
+  gap: 24px;
+  padding: 16px 40px;
+  justify-content: center;
+  border-radius: 16px;
+  background: ${(props) =>
+    props.$write
+      ? `linear-gradient(
+    180deg,
+    var(--dark-blue) -102.68%,
+    var(--bright-blue) 58.93%
+  )`
+      : "linear-gradient(180deg, rgba(0, 4, 40, 0.20) -102.68%, rgba(46, 152, 242, 0.20) 58.93%)"};
+  color: ${(props) =>
+    props.$write ? `var(--dark-blue)` : `var(--main-typography)`};
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.3s;
+
+  & svg {
+    fill: var(--dark-blue);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.7);
+  }
+`;

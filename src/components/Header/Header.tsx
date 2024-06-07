@@ -5,9 +5,9 @@ const Header: React.FC = () => {
   return (
     <s.HeaderContainer>
       <s.NavBlock>
-        {navigation.map((item) => (
-          <s.Button key={item.href} href={item.href}>
-            {item.title}
+        {navigation.map(({ href, title }) => (
+          <s.Button key={href} href={href}>
+            {title}
           </s.Button>
         ))}
       </s.NavBlock>

@@ -13,6 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
   --dark-blue: #000428;
   --deep-blue: #004e92;
+  --bright-blue: #2e98f2;
+  --light-blue: #75bdfb;
   --main-typography: #f5ebf6;
 
   color: var(--main-typography);
@@ -25,7 +27,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 12px;
-  background: #75bdfb;
+  background: var(--light-blue);
 }
 
 ::-webkit-scrollbar-thumb {

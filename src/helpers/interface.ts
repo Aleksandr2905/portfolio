@@ -10,3 +10,17 @@ export interface ITitleProps {
 export interface IAbout {
   text: string;
 }
+
+export interface ISocial {
+  link: string;
+  icon: string;
+  ariaLabel: string;
+}
+
+export interface IButton {
+  href: string;
+  ariaLabel: string;
+  text: string;
+  icon: string;
+  write?: boolean;
+}

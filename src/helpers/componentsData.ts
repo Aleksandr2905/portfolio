@@ -1,4 +1,4 @@
-import { IAbout, INavigate } from "./interface";
+import { IAbout, INavigate, ISocial } from "./interface";
 
 export const navigation: INavigate[] = [
   { href: "#about", title: "About me" },
@@ -20,5 +20,23 @@ export const aboutText: IAbout[] = [
   },
   {
     text: "Open to new ideas and feedback, I view mistakes as opportunities to learn and grow.",
+  },
+];
+
+export const social: ISocial[] = [
+  {
+    link: "https://github.com/Aleksandr2905",
+    icon: "github",
+    ariaLabel: "Link to github",
+  },
+  {
+    link: "https://t.me/alan_2905",
+    icon: "telegram",
+    ariaLabel: "Link to telegram",
+  },
+  {
+    link: "https://linkedin.com/in/oleksandr-natalukha/",
+    icon: "linkedin",
+    ariaLabel: "Link to linkedin",
   },
 ];
