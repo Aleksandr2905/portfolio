@@ -13,7 +13,7 @@ const Social: React.FC = () => {
           rel="noopener noreferrer"
           aria-label={ariaLabel}
         >
-          <svg width={32} height={32}>
+          <svg width={28} height={28}>
             <use href={`${sprite}#${icon}`} />
           </svg>
         </s.Button>

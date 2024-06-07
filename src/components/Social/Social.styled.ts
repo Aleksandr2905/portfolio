@@ -6,9 +6,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Button = styled.a`
-  width: 60px;
-  height: 60px;
-  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  padding: 8px;
   border-radius: 50%;
   background-color: var(--dark-blue);
   transition: all 0.3s;

@@ -10,7 +10,7 @@ const TechSkills: React.FC = () => {
       <Title title="Tech Skills" />
       <s.Wrapper>
         {techSkills.map(({ icon }) => (
-          <svg key={icon} width={84} height={84}>
+          <svg key={icon} width={60} height={60}>
             <use href={`${sprite}#${icon}`} />
           </svg>
         ))}
