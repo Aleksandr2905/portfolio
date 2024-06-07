@@ -4,8 +4,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1;
   font-weight: 400;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100%; */
+  /* height: 100vh; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,6 +21,25 @@
 
 body {
   padding: 40px 58px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: #75bdfb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, var(--dark-blue) 0%, var(--deep-blue) 100%);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, var(--deep-blue) 0%, var(--dark-blue) 100%);
+}
+
+::-webkit-scrollbar-track {
+  background: #75bdfb;
+  border-radius: 6px;
 }
 
 /** =============== FONTS ================ **/

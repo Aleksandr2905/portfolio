@@ -18,4 +18,7 @@ export const aboutText: IAbout[] = [
   {
     text: "I am not afraid to think outside the box and propose new ideas, always striving to create products of the highest quality. I am constantly searching for new and better ways to implement projects.",
   },
+  {
+    text: "Open to new ideas and feedback, I view mistakes as opportunities to learn and grow.",
+  },
 ];

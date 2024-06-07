@@ -2,24 +2,9 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
-/* @font-face {
-  font-family: "Montserrat";
-  font-weight: 400;
-  src: url("../assets/fonts/Montserrat-Regular.woff") format("woff");
-  font-display: fallback;
+html {
+  scroll-behavior: smooth;
 }
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  src: url("../assets/fonts/Montserrat-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 600;
-  src: url("../assets/fonts/Montserrat-SemiBold.woff") format("woff");
-} */
 
 html,
 body,
