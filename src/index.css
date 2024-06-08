@@ -15,7 +15,10 @@
   --deep-blue: #004e92;
   --bright-blue: #2e98f2;
   --light-blue: #75bdfb;
+  --bg-secondary: #002659;
   --bg-footer: #00133e;
+  --bg-input: #093a7b;
+  --errors: #ef5050;
   --main-typography: #f5ebf6;
 
   color: var(--main-typography);
@@ -41,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #75bdfb;
+  background: var(--light-blue);
   border-radius: 6px;
 }
 
@@ -56,7 +59,7 @@ body {
 @font-face {
   font-family: "Montserrat";
   font-weight: 500;
-  src: url("./assets/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("./assets/fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
