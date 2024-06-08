@@ -28,3 +28,16 @@ export interface IButton {
 export interface ITechSkills {
   icon: string;
 }
+
+export interface IProjects {
+  name: string;
+  image: string;
+  description: string;
+  technologies: string;
+  gitHub: string;
+  livePage: string;
+}
+
+export interface ICardProjectProps {
+  project: IProjects;
+}

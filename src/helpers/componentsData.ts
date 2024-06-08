@@ -21,6 +21,9 @@ export const aboutText: IAbout[] = [
   {
     text: "Open to new ideas and feedback, I view mistakes as opportunities to learn and grow.",
   },
+  {
+    text: "Life is beautiful, and I aim to enjoy every moment of it.",
+  },
 ];
 
 export const social: ISocial[] = [

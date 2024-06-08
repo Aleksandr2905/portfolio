@@ -51,18 +51,21 @@ body {
 /** =============== FONTS ================ **/
 
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-weight: 400;
   src: url("./assets/fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-weight: 500;
   src: url("./assets/fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-weight: 600;
   src: url("./assets/fonts/Montserrat-SemiBold.woff") format("woff");
