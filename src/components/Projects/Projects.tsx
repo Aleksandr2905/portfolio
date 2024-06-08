@@ -45,12 +45,22 @@ const Projects: React.FC = () => {
         >
           {slideCards}
         </Swiper>
-        <s.Button type="button" onClick={handlePrev} $left={true}>
+        <s.Button
+          type="button"
+          onClick={handlePrev}
+          $left={true}
+          aria-label="button-prev"
+        >
           <svg width={24} height={24}>
             <use href={`${sprite}#arrow`} />
           </svg>
         </s.Button>
-        <s.Button type="button" onClick={handleNext} $left={false}>
+        <s.Button
+          type="button"
+          onClick={handleNext}
+          $left={false}
+          aria-label="button-next"
+        >
           <svg width={24} height={24}>
             <use href={`${sprite}#arrow`} />
           </svg>
