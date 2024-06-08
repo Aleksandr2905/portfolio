@@ -44,6 +44,7 @@ export const Input = styled.input<{ $errors?: boolean }>`
   border: 1px solid
     ${(props) => (props.$errors ? `var(--errors)` : `var(--bg-input)`)};
   outline: none;
+  transition: all 0.3s;
   color: var(--main-typography);
   background-color: var(--bg-input);
 
@@ -80,11 +81,12 @@ export const Textarea = styled.textarea<{ $errors?: boolean }>`
   font-weight: 400;
   line-height: 140%;
   resize: none;
-  color: var(--main-typography);
   border: 1px solid
     ${(props) => (props.$errors ? `var(--errors)` : `var(--bg-input)`)};
   outline: none;
+  transition: all 0.3s;
   background-color: var(--bg-input);
+  color: var(--main-typography);
 
   &:hover {
     box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.3);
