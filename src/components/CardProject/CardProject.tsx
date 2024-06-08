@@ -7,7 +7,7 @@ const CardProject: React.FC<ICardProjectProps> = ({ project }) => {
   return (
     <div>
       <s.Wrapper key={name}>
-        <s.Image src={image} />
+        <s.Image src={image} alt="Photo project" />
         <s.Description>
           <s.Name>{name}</s.Name>
           <s.Text>{description}</s.Text>
