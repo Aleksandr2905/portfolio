@@ -18,6 +18,8 @@ type ProjectType = "individual" | "team";
 const Projects: React.FC = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const [projectType, setProjectType] = useState<ProjectType>("individual");
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
 
   const getSlideCards = (projects: IProjects[]) =>
     projects.map((project) => (
@@ -36,6 +38,18 @@ const Projects: React.FC = () => {
 
   const handleToggle = (type: ProjectType) => {
     setProjectType(type);
+    if (swiperInstance) {
+      swiperInstance.slideTo(0, 0);
+      setIsBeginning(true);
+      setIsEnd(false);
+    }
+  };
+
+  const handleSlideChange = () => {
+    if (swiperInstance) {
+      setIsBeginning(swiperInstance.isBeginning);
+      setIsEnd(swiperInstance.isEnd);
+    }
   };
 
   return (
@@ -64,6 +78,7 @@ const Projects: React.FC = () => {
           spaceBetween={24}
           slidesPerView={1}
           centeredSlidesBounds={true}
+          onSlideChange={handleSlideChange}
         >
           {projectType === "individual"
             ? getSlideCards(individualProjects)
@@ -74,6 +89,7 @@ const Projects: React.FC = () => {
           onClick={() => handleNavigation("prev")}
           $left={true}
           aria-label="button-prev"
+          disabled={isBeginning}
         >
           <svg width={24} height={24}>
             <use href={`${sprite}#arrow`} />
@@ -84,6 +100,7 @@ const Projects: React.FC = () => {
           onClick={() => handleNavigation("next")}
           $left={false}
           aria-label="button-next"
+          disabled={isEnd}
         >
           <svg width={24} height={24}>
             <use href={`${sprite}#arrow`} />

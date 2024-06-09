@@ -45,7 +45,10 @@ export const BtnNavProjects = styled.button<{ $active: boolean }>`
   }
 `;
 
-export const ButtonSlider = styled.button<{ $left: boolean }>`
+export const ButtonSlider = styled.button<{
+  $left: boolean;
+  disabled?: boolean;
+}>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +62,8 @@ export const ButtonSlider = styled.button<{ $left: boolean }>`
   border-radius: 50%;
   transition: all 0.5s;
   background-color: var(--light-blue);
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  pointer-events: ${(props) => (props.disabled ? "none" : "auto")};
 
   & svg {
     rotate: ${(props) => (props.$left ? "270deg" : "90deg")};
@@ -66,11 +71,14 @@ export const ButtonSlider = styled.button<{ $left: boolean }>`
   }
 
   &:hover {
-    background-color: var(--dark-blue);
-    box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.7);
+    background-color: ${(props) =>
+      props.disabled ? "var(--light-blue)" : "var(--dark-blue)"};
+    box-shadow: ${(props) =>
+      props.disabled ? "none" : "0px 0px 30px 0px rgba(233, 255, 255, 0.7)"};
 
     & svg {
-      fill: var(--light-blue);
+      fill: ${(props) =>
+        props.disabled ? "var(--dark-blue)" : "var(--light-blue)"};
     }
   }
 `;
