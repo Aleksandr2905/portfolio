@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   max-width: 1108px;
+  height: 395px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 32px 35px;
+  padding: 32px;
   gap: 35px;
   border-radius: 24px;
   background: var(--bg-secondary);
@@ -12,6 +14,9 @@ export const Wrapper = styled.div`
 
 export const Image = styled.img`
   max-width: 535px;
+  height: 290px;
+  margin: auto 0;
+  /* height: 396px; */
   border-radius: 16px;
 `;
 
@@ -40,4 +45,5 @@ export const Text = styled.p`
 export const BtnBlock = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 `;

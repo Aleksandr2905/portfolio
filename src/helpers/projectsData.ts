@@ -1,4 +1,5 @@
 import pharmacy from "../assets/image/projects/e-pharmacy.png";
+import waterTracker from "../assets/image/projects/water-tracker.png";
 import { IProjects } from "./interface";
 
 export const individualProjects: IProjects[] = [
@@ -31,5 +32,17 @@ export const individualProjects: IProjects[] = [
       "HTML,  CSS,  JS, React, Redux  Toolkit, React  Hook Form,  MUI, Node.js, Express.js, MongoDB, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/e-pharmacy",
     livePage: "https://e-pharmacy-client.vercel.app/",
+  },
+];
+
+export const teamProjects: IProjects[] = [
+  {
+    name: "Tracker of water",
+    image: waterTracker,
+    description:
+      "The  application  is  designed  to  track  user's  water  consumption.  Registration,  user  login,  and responsive layout are implemented. Team project. Role: Developer.",
+    technologies: "HTML, CSS, JS, React, Redux, Node.js, Express.js, MongoDB",
+    gitHub: "https://github.com/Aleksandr2905/watertracker-app",
+    livePage: "https://waterbot-app.vercel.app/",
   },
 ];
