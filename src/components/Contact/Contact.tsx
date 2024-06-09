@@ -2,6 +2,7 @@ import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import { Report } from "notiflix/build/notiflix-report-aio";
 import { schema } from "../../helpers/validations";
 import { Container } from "../../style/GlobalStyles";
 import Title from "../Title/Title";
@@ -24,16 +25,24 @@ const Contact: React.FC = () => {
   });
 
   const onSubmit = (data: FormData) => {
+    const { username } = data;
     emailjs
       .send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, data, VITE_PUBLIC_KEY)
-      .then((response) => {
+      .then(() => {
         reset();
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Email sent successfully!");
+        Report.success(
+          "Email sent successfully!",
+          `Dear ${username}, Thank you for contacting us! I have received your message and will get in touch with you shortly. I will answer all your questions and provide the necessary information. Best regards, Oleksandr`,
+          "Ok"
+        );
       })
       .catch((err) => {
         console.error("FAILED...", err);
-        alert("Failed to send email.");
+        Report.failure(
+          "Failed to send email.",
+          "Unfortunately, there was an error in sending your message. Please try again or contact us directly via email. We apologize for any inconvenience and appreciate your understanding.",
+          "Ok"
+        );
       });
   };
 

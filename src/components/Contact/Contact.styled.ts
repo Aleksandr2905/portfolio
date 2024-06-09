@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Report } from "notiflix/build/notiflix-report-aio";
 
 export const Text = styled.p`
   text-align: center;
@@ -157,3 +158,46 @@ export const Button = styled.button`
     }
   }
 `;
+
+Report.init({
+  width: "320px",
+  backgroundColor: `var( --main-typography)`,
+  borderRadius: "25px",
+  rtl: false,
+  zindex: 4002,
+  backOverlay: true,
+  backOverlayColor: "rgba(0,0,0,0.5)",
+  backOverlayClickToClose: false,
+  fontFamily: "Montserrat, sans-serif",
+  svgSize: "110px",
+  plainText: true,
+  titleFontSize: "20px",
+  titleMaxLength: 34,
+  messageFontSize: "16px",
+  messageMaxLength: 400,
+  buttonFontSize: "14px",
+  buttonMaxLength: 34,
+  cssAnimation: true,
+  cssAnimationDuration: 360,
+  cssAnimationStyle: "fade",
+  success: {
+    svgColor: `var(--deep-blue)`,
+    titleColor: `var(--dark-blue)`,
+    messageColor: `var(--dark-blue)`,
+    buttonBackground: `linear-gradient(
+    180deg,
+    var(--dark-blue) -102.68%,
+    var(--bright-blue) 58.93%
+  )`,
+    buttonColor: `var(--main-typography)`,
+    backOverlayColor: "rgba(0,0,0,0.5)",
+  },
+  failure: {
+    svgColor: `var(--errors)`,
+    titleColor: `var(--dark-blue)`,
+    messageColor: `var(--dark-blue)`,
+    buttonBackground: `var(--errors)`,
+    buttonColor: `var(--main-typography)`,
+    backOverlayColor: "rgba(0,0,0,0.5)",
+  },
+});
