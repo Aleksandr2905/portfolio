@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           </s.TitleWrapper>
           <s.BtnWrapper>
             <Button
-              href="mailto:natalukha.a.a@gmail.com"
+              href="mailto:natalukha.dev@gmail.com"
               ariaLabel="write by email"
               text="Write"
               icon="email"

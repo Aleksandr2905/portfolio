@@ -1,4 +1,5 @@
 import * as yup from "yup";
+import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { schema } from "../../helpers/validations";
@@ -7,6 +8,8 @@ import Title from "../Title/Title";
 import * as s from "./Contact.styled";
 import sprite from "../../assets/icons/sprite.svg";
 
+const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
+
 type FormData = yup.InferType<typeof schema>;
 
 const Contact: React.FC = () => {
@@ -14,19 +17,32 @@ const Contact: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormData>({
     mode: "all",
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data: FormData) => console.log(data);
+  const onSubmit = (data: FormData) => {
+    emailjs
+      .send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, data, VITE_PUBLIC_KEY)
+      .then((response) => {
+        reset();
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Email sent successfully!");
+      })
+      .catch((err) => {
+        console.error("FAILED...", err);
+        alert("Failed to send email.");
+      });
+  };
 
   return (
     <Container id="contact">
       <Title title="Contact" />
       <s.Text>
         Please contact me directly at{" "}
-        <a href="mailto:natalukha.a.a@gmail.com">natalukha.a.a@gmail.com</a> or
+        <a href="mailto:natalukha.dev@gmail.com">natalukha.dev@gmail.com</a> or
         through this form.
       </s.Text>
       <s.Forma onSubmit={handleSubmit(onSubmit)}>
@@ -68,3 +84,7 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+
+// user_id = service_1zqvwxj;
+// service_id = service_1zqvwxj;
+// template_id =template_pzc1uwe;

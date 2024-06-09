@@ -13,11 +13,11 @@ const Footer: React.FC = () => {
             </svg>
             +380 660 578 505
           </s.Contact>
-          <s.Contact href="mailto:natalukha.a.a@gmail.com">
+          <s.Contact href="mailto:natalukha.dev@gmail.com">
             <svg width={24} height={24}>
               <use href={`${sprite}#email`} />
             </svg>
-            natalukha.a.a@gmail.com
+            natalukha.dev@gmail.com
           </s.Contact>
         </s.ContactsBlock>
         <Social />
