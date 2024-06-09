@@ -4,7 +4,7 @@ import * as s from "./Footer.styled";
 
 const Footer: React.FC = () => {
   return (
-    <s.Wrapper>
+    <s.Wrapper id="footer">
       <s.ContentBlock>
         <s.ContactsBlock>
           <s.Contact href="tel:+380660578505">
