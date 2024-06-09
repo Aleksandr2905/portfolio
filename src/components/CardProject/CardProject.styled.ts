@@ -13,10 +13,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 535px;
-  height: 290px;
+  width: 535px;
   margin: auto 0;
-  /* height: 396px; */
   border-radius: 16px;
 `;
 
