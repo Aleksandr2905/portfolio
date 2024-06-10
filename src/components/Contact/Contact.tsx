@@ -93,7 +93,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
-// user_id = service_1zqvwxj;
-// service_id = service_1zqvwxj;
-// template_id =template_pzc1uwe;

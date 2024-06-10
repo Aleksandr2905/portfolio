@@ -26,7 +26,7 @@ export const Description = styled.div`
 
 export const Name = styled.h3`
   font-family: Montserrat, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   line-height: normal;
   color: var(--main-typography);

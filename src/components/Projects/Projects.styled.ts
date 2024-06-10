@@ -24,13 +24,9 @@ export const BtnNavProjects = styled.button<{ $active: boolean }>`
   background: ${(props) =>
     props.$active
       ? `var(--dark-blue)`
-      : `linear-gradient(
-      180deg,
-      var(--dark-blue) -102.68%,
-      var(--bright-blue) 58.93%
-    )`};
+      : "linear-gradient(180deg, rgba(0, 4, 40, 0.20) -102.68%, rgba(46, 152, 242, 0.20) 58.93%)"};
   color: ${(props) =>
-    props.$active ? `var(--main-typography)` : `var(--dark-blue)`};
+    props.$active ? `var(--main-typography)` : `var(--main-typography)`};
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 500;
