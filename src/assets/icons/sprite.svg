@@ -154,5 +154,14 @@
 <symbol id="email" viewBox="0 0 32 32">
 <path d="M24.96 5.76h-17.92c-1.018 0-1.995 0.405-2.715 1.125s-1.125 1.697-1.125 2.715v12.8c0 1.018 0.405 1.995 1.125 2.715s1.697 1.125 2.715 1.125h17.92c1.018 0 1.995-0.405 2.715-1.125s1.125-1.697 1.125-2.715v-12.8c0-1.018-0.405-1.995-1.125-2.715s-1.697-1.125-2.715-1.125zM7.040 8.32h17.92c0.339 0 0.665 0.135 0.905 0.375s0.375 0.566 0.375 0.905l-10.24 6.246-10.24-6.246c0-0.339 0.135-0.665 0.375-0.905s0.566-0.375 0.905-0.375zM26.24 22.4c0 0.339-0.135 0.665-0.375 0.905s-0.566 0.375-0.905 0.375h-17.92c-0.339 0-0.665-0.135-0.905-0.375s-0.375-0.566-0.375-0.905v-9.882l9.574 5.85c0.195 0.112 0.415 0.172 0.64 0.172s0.445-0.059 0.64-0.172l9.626-5.85v9.882z"></path>
 </symbol>
+<symbol id="burger" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M28.338 16.207h-24"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M28.338 11.007h-24"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M28.338 21.407h-24"></path>
+</symbol>
+<symbol id="close" viewBox="0 0 32 32">
+<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
+<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>

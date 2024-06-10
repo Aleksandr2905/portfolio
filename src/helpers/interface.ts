@@ -41,3 +41,7 @@ export interface IProjects {
 export interface ICardProjectProps {
   project: IProjects;
 }
+
+export interface IMobileMenuProps {
+  onClose: () => void;
+}
