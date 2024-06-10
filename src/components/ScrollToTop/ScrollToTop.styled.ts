@@ -6,7 +6,7 @@ export const ScrollToTopButton = styled.button`
   align-items: center;
   position: fixed;
   bottom: var(--scroll-to-top-bottom);
-  right: calc(100% / 2 - 1312px / 2);
+  right: calc(100% / 2 - 1324px / 2);
   width: 40px;
   height: 40px;
   border: none;

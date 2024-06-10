@@ -95,6 +95,8 @@ a {
 `;
 
 export const Container = styled.section`
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 40px 58px;
 
   /* @media screen and (min-width: 768px) {

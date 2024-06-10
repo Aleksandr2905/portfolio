@@ -25,9 +25,9 @@
   background: linear-gradient(0deg, var(--deep-blue) 0%, var(--dark-blue) 100%);
 }
 
-body {
+/* body {
   padding: 40px 58px;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 12px;

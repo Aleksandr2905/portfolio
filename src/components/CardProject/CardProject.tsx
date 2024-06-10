@@ -5,7 +5,7 @@ import * as s from "./CardProject.styled";
 const CardProject: React.FC<ICardProjectProps> = ({ project }) => {
   const { name, image, description, technologies, gitHub, livePage } = project;
   return (
-    <div>
+    <>
       <s.Wrapper key={name}>
         <s.Image
           src={image}
@@ -34,7 +34,7 @@ const CardProject: React.FC<ICardProjectProps> = ({ project }) => {
           </s.BtnBlock>
         </s.Description>
       </s.Wrapper>
-    </div>
+    </>
   );
 };
 
