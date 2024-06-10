@@ -3,6 +3,7 @@ import nanny from "../assets/image/projects/nanny.jpg";
 import rental from "../assets/image/projects/rental-car.jpg";
 import phonebook from "../assets/image/projects/phonebook.jpg";
 
+import healthy from "../assets/image/projects/healthy-management.jpg";
 import waterTracker from "../assets/image/projects/water-tracker.png";
 import budgetBoss from "../assets/image/projects/budget-boss.jpg";
 
@@ -50,6 +51,16 @@ export const individualProjects: IProjects[] = [
 ];
 
 export const teamProjects: IProjects[] = [
+  {
+    name: "Healthy Management",
+    image: healthy,
+    description:
+      "A landing page with information about a business partner in the development and communications of healthy management, building effective healthy management strategies for medical brands. The site features a feedback form that sends data to Telegram and confirms feedback via the user's email. Team project. Role: Developer.",
+    technologies:
+      "HTML, CSS, JS, React, Redux, Node.js, Express.js, MongoDB, Styled Components",
+    gitHub: "https://github.com/Aleksandr2905/healthy-management-project",
+    livePage: "https://healthymanagement.com.ua/",
+  },
   {
     name: "Tracker of water",
     image: waterTracker,
