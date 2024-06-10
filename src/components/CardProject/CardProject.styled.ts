@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
     max-width: 1108px;
     height: 395px;
     height: auto;
+    flex-wrap: nowrap;
   }
 `;
 
@@ -33,6 +34,11 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 452px;
+
+  @media screen and (min-width: 1440px) {
+    height: auto;
+  }
 `;
 
 export const Name = styled.h3`

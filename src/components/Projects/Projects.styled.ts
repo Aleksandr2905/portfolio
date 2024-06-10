@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const WrapperSlider = styled.div`
   position: relative;
-  padding: 0 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const BtnNavBlock = styled.div`
@@ -54,8 +58,8 @@ export const ButtonSlider = styled.button<{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 44%;
-  ${(props) => (props.$left ? "left: 0;" : "right: 0;")}
+  bottom: 0;
+  ${(props) => (props.$left ? "left: 30%;" : "right: 30%;")}
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -81,5 +85,10 @@ export const ButtonSlider = styled.button<{
       fill: ${(props) =>
         props.disabled ? "var(--dark-blue)" : "var(--light-blue)"};
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 44%;
+    ${(props) => (props.$left ? "left: 0;" : "right: 0;")}
   }
 `;
