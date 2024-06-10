@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+  margin: 0 40px;
   padding: 20px 0;
 `;
 
 export const NavBlock = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 96px;
-  padding: 16px 72px;
+  padding: 16px 40px;
   margin: 0 auto;
-  width: fit-content;
+  width: 100%;
   border-radius: 24px;
   box-shadow: 4px 4px 10px 0px #02062e;
   background: linear-gradient(
@@ -18,6 +19,12 @@ export const NavBlock = styled.nav`
     var(--deep-blue) -51.18%,
     var(--dark-blue) 91.18%
   );
+
+  @media screen and (min-width: 1440px) {
+    padding: 16px 72px;
+    justify-content: center;
+    width: fit-content;
+  }
 `;
 
 export const Button = styled.a`

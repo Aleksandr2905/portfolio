@@ -8,4 +8,8 @@ export const BurgerButton = styled.button`
   & svg {
     stroke: var(--main-typography);
   }
+
+  &:focus {
+    outline: 1px solid var(--main-typography);
+  }
 `;

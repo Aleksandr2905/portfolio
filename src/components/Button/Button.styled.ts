@@ -5,6 +5,7 @@ export const Button = styled.a<{ $write?: boolean }>`
   align-items: center;
   width: ${(props) => (props.$write ? "202px" : "auto")};
   gap: 24px;
+  flex-grow: 1;
   padding: 16px 40px;
   justify-content: center;
   border-radius: 16px;

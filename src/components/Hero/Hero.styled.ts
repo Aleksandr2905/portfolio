@@ -2,12 +2,17 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
+  gap: 40px;
   max-width: 1108px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
   margin: 0 auto;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1440px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Photo = styled.img`
@@ -54,4 +59,6 @@ export const Text = styled.h2`
 export const BtnWrapper = styled.div`
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;

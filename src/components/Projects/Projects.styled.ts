@@ -2,14 +2,19 @@ import styled from "styled-components";
 
 export const WrapperSlider = styled.div`
   position: relative;
+  padding: 0 60px;
 `;
 
 export const BtnNavBlock = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 30px;
-  max-width: 1108px;
+  max-width: 768px;
   margin: 0 auto 28px;
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1108px;
+  }
 `;
 
 export const BtnNavProjects = styled.button<{ $active: boolean }>`

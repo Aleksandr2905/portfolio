@@ -2,20 +2,31 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  max-width: 1108px;
-  height: 395px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 768px;
+  height: auto;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 32px;
   gap: 35px;
   border-radius: 24px;
   background: var(--bg-secondary);
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1108px;
+    height: 395px;
+    height: auto;
+  }
 `;
 
 export const Image = styled.img`
-  width: 535px;
   margin: auto 0;
   border-radius: 16px;
+
+  @media screen and (min-width: 1440px) {
+    width: 535px;
+  }
 `;
 
 export const Description = styled.div`
@@ -42,6 +53,8 @@ export const Text = styled.p`
 
 export const BtnBlock = styled.div`
   display: flex;
+  gap: 30px;
   justify-content: space-between;
   margin-top: auto;
+  flex-wrap: wrap;
 `;

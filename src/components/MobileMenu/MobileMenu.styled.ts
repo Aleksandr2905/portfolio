@@ -30,8 +30,8 @@ export const Container = styled.div`
 `;
 export const CloseBtn = styled.button`
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 40px;
+  right: 40px;
   border: none;
   padding: 0;
   background-color: transparent;
