@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useCallback, useEffect, useMemo, useRef } from "react";
 import { createPortal } from "react-dom";
 import { IMobileMenuProps } from "../../helpers/interface";
 import * as s from "./MobileMenu.styled";
@@ -11,11 +11,14 @@ const MobileMenu: React.FC<IMobileMenuProps> = ({ onClose }) => {
     document.getElementById("modal")
   );
 
-  const handleKeydown = (event: KeyboardEvent): void => {
-    if (event.code === "Escape") {
-      onClose();
-    }
-  };
+  const handleKeydown = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    },
+    [onClose]
+  );
 
   useEffect(() => {
     const currentModalRootElement = modalRootElementRef.current;
