@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   return (
     <s.HeaderContainer>
       <s.NavBlock>
-        <a href="/" style={{ position: "relative" }}>
+        <a href="/" aria-label="logo">
           <svg width="60" height="60">
             <use href={`${sprite}#on`} />
           </svg>
