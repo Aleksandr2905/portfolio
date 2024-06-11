@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.footer`
-  padding-top: 40px;
+  padding: 40px 24px 0;
   background-color: var(--bg-footer);
+
+  @media screen and (min-width: 1440px) {
+    padding: 40px 0 0;
+  }
 `;
 
 export const ContentBlock = styled.div`
@@ -10,6 +14,8 @@ export const ContentBlock = styled.div`
   align-items: center;
   justify-content: space-between;
   max-width: 1108px;
+  gap: 30px;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 40px;
   border-bottom: 1px solid var(--main-typography);
@@ -17,6 +23,7 @@ export const ContentBlock = styled.div`
 
 export const ContactsBlock = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 `;
 
