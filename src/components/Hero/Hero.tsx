@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             type="image/webp"
           />
           <source srcSet={`${photo1x} 1x, ${photo2x} 2x`} type="image/jpeg" />
-          <s.Photo src={photo1x} alt="Oleksandr" width={430} height={559} />
+          <s.Photo src={photo1x} alt="Oleksandr" width={327} height={425} />
         </picture>
         <s.Profile>
           <s.TitleWrapper>
