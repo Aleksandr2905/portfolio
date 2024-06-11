@@ -12,7 +12,11 @@ const Burger: React.FC = () => {
 
   return (
     <div>
-      <s.BurgerButton type="button" onClick={toggleMobileMenu}>
+      <s.BurgerButton
+        type="button"
+        onClick={toggleMobileMenu}
+        aria-label="burger button"
+      >
         <svg width="48" height="48">
           <use href={`${sprite}#burger`} />
         </svg>
