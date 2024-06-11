@@ -11,8 +11,9 @@ export const HeaderContainer = styled.header`
 
 export const NavBlock = styled.nav`
   display: flex;
-  justify-content: flex-end;
-  gap: 96px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
   padding: 16px 40px;
   margin: 0 auto;
   width: 100%;

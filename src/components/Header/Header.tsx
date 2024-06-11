@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import { navigation } from "../../helpers/componentsData";
+import sprite from "../../assets/icons/sprite.svg";
 import * as s from "./Header.styled";
 import Burger from "../Burger/Burger";
 
@@ -11,6 +12,11 @@ const Header: React.FC = () => {
   return (
     <s.HeaderContainer>
       <s.NavBlock>
+        <a href="/" style={{ position: "relative" }}>
+          <svg width="60" height="60">
+            <use href={`${sprite}#on`} />
+          </svg>
+        </a>
         {isTablet ? (
           <Burger />
         ) : (
