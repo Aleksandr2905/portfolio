@@ -6,7 +6,7 @@ export const ScrollToTopButton = styled.button`
   align-items: center;
   position: fixed;
   bottom: var(--scroll-to-top-bottom);
-  right: calc(100% / 2 - 1324px / 2);
+  right: 20px;
   width: 40px;
   height: 40px;
   border: none;
@@ -28,13 +28,7 @@ export const ScrollToTopButton = styled.button`
     }
   }
 
-  /* @media screen and (min-width: 768px) {
-    right: calc(100% / 2 - 704px / 2);
-  }
-
   @media screen and (min-width: 1440px) {
-    width: 52px;
-    height: 52px;
-    right: calc(100% / 2 - 1234px / 2);
-  } */
+    right: calc(100% / 2 - 1324px / 2);
+  }
 `;
