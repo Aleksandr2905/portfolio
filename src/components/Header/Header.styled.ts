@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  margin: 0 40px;
+  margin: 0 20px;
   padding: 20px 0;
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 40px;
+  }
 `;
 
 export const NavBlock = styled.nav`
