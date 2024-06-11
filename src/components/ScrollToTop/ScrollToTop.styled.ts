@@ -29,6 +29,6 @@ export const ScrollToTopButton = styled.button`
   }
 
   @media screen and (min-width: 1440px) {
-    right: calc(100% / 2 - 1324px / 2);
+    right: calc(100% / 2 - 1312px / 2);
   }
 `;
