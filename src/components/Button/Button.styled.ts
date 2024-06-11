@@ -6,7 +6,7 @@ export const Button = styled.a<{ $write?: boolean }>`
   width: ${(props) => (props.$write ? "202px" : "auto")};
   gap: 24px;
   flex-grow: 1;
-  padding: 16px 40px;
+  padding: 16px;
   justify-content: center;
   border-radius: 16px;
   background: ${(props) =>
@@ -38,5 +38,9 @@ export const Button = styled.a<{ $write?: boolean }>`
     & svg {
       fill: var(--main-typography);
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 16px 40px;
   }
 `;

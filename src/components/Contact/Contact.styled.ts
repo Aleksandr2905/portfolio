@@ -22,12 +22,17 @@ export const Text = styled.p`
 export const Forma = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 40px 32px;
+  gap: 28px;
+  padding: 24px;
   max-width: 636px;
   margin: 0 auto;
   border-radius: 24px;
   background-color: var(--bg-secondary);
+
+  @media screen and (min-width: 1440px) {
+    gap: 40px;
+    padding: 40px 32px;
+  }
 `;
 
 export const WrapperInput = styled.div`
@@ -127,7 +132,7 @@ export const Button = styled.button`
   gap: 24px;
   width: fit-content;
   margin: 0 auto;
-  padding: 16px 40px;
+  padding: 16px;
   justify-content: center;
   border: none;
   border-radius: 16px;
@@ -156,6 +161,10 @@ export const Button = styled.button`
     & svg {
       fill: var(--main-typography);
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 16px 40px;
   }
 `;
 

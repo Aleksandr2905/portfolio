@@ -8,12 +8,13 @@ export const Wrapper = styled.div`
   height: auto;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 32px;
+  padding: 24px;
   gap: 35px;
   border-radius: 24px;
   background: var(--bg-secondary);
 
   @media screen and (min-width: 1440px) {
+    padding: 32px;
     max-width: 1108px;
     height: 395px;
     height: auto;
@@ -34,7 +35,15 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 452px;
+  height: 608px;
+
+  @media screen and (min-width: 475px) {
+    height: 460px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
 
   @media screen and (min-width: 1440px) {
     height: auto;
