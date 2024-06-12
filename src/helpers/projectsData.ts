@@ -6,6 +6,7 @@ import phonebook from "../assets/image/projects/phonebook.jpg";
 import healthy from "../assets/image/projects/healthy-management.jpg";
 import waterTracker from "../assets/image/projects/water-tracker.png";
 import budgetBoss from "../assets/image/projects/budget-boss.jpg";
+import tastyTreats from "../assets/image/projects/tasty-treats.jpg";
 
 import { IProjects } from "./interface";
 
@@ -79,5 +80,14 @@ export const teamProjects: IProjects[] = [
     technologies: "HTML, CSS, JS, React, Redux, Rest API, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/react-project-budget-boss",
     livePage: "https://aleksandr2905.github.io/react-project-budget-boss",
+  },
+  {
+    name: "Tasty Treats",
+    image: tastyTreats,
+    description:
+      "The website offers a cooking masterclass with the option to choose dish categories, ingredients, cooking time, and step-by-step video guides. The course includes recipes from various countries. Adaptive design, animations, modal windows, and burger menu for ordering. Team project. Role: Developer.",
+    technologies: "HTML, CSS, JS, REST API, Parcel",
+    gitHub: "https://github.com/Aleksandr2905/js-project-team",
+    livePage: "https://aleksandr2905.github.io/js-project-team/index.html",
   },
 ];
