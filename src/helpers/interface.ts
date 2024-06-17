@@ -72,3 +72,14 @@ export interface ICardProjectProps {
 export interface IMobileMenuProps {
   onClose: () => void;
 }
+
+export type Theme = "light" | "dark";
+
+export interface ThemeContextType {
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
+}
+
+export interface ThemeSwitcherProps {
+  $mobileMenu?: boolean;
+}

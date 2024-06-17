@@ -13,7 +13,7 @@ export const NavBlock = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 64px;
+  gap: 58px;
   padding: 16px 40px;
   margin: 0 auto;
   width: 100%;
@@ -49,4 +49,9 @@ export const Button = styled.a`
     );
     box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25);
   }
+`;
+
+export const SwitchersBlock = styled.div`
+  display: flex;
+  gap: 20px;
 `;

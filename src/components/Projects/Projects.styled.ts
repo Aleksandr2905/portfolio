@@ -46,7 +46,7 @@ export const BtnNavProjects = styled.button<{ $active: boolean }>`
     transform: scale(1.05);
     background: var(--dark-blue);
     color: var(--main-typography);
-    box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.7);
+    box-shadow: 0px 0px 30px 0px var(--shadow-hover);
   }
 `;
 
@@ -72,14 +72,14 @@ export const ButtonSlider = styled.button<{
 
   & svg {
     rotate: ${(props) => (props.$left ? "270deg" : "90deg")};
-    fill: var(--dark-blue);
+    fill: var(--main-typography);
   }
 
   &:hover {
     background-color: ${(props) =>
       props.disabled ? "var(--light-blue)" : "var(--dark-blue)"};
     box-shadow: ${(props) =>
-      props.disabled ? "none" : "0px 0px 30px 0px rgba(233, 255, 255, 0.7)"};
+      props.disabled ? "none" : "0px 0px 30px 0px var(--shadow-hover)"};
 
     & svg {
       fill: ${(props) =>

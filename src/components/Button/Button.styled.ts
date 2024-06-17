@@ -26,14 +26,15 @@ export const Button = styled.a<{ $write?: boolean }>`
   transition: all 0.3s;
 
   & svg {
-    fill: var(--dark-blue);
+    fill: ${(props) =>
+      props.$write ? `var(--dark-blue)` : `var(--main-typography)`};
   }
 
   &:hover {
     transform: scale(1.05);
     background: var(--dark-blue);
     color: var(--main-typography);
-    box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.7);
+    box-shadow: 0px 0px 30px 0px var(--shadow-hover);
 
     & svg {
       fill: var(--main-typography);

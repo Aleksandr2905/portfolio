@@ -9,6 +9,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
   --dark-blue: #000428;
   --deep-blue: #004e92;
   --bright-blue: #2e98f2;
@@ -18,6 +21,25 @@
   --bg-input: #093a7b;
   --errors: #ef5050;
   --main-typography: #f5ebf6;
+  --shadow-hover: rgba(233, 255, 255, 0.7);
+  --shadow-social: rgba(233, 255, 255, 0.3);
+
+  color: var(--main-typography);
+  background: linear-gradient(0deg, var(--deep-blue) 0%, var(--dark-blue) 100%);
+}
+
+body.light {
+  --dark-blue: #add7f4;
+  --deep-blue: #e3f2fd;
+  --bright-blue: #42a5f5;
+  --light-blue: #bbdefb;
+  --bg-secondary: #e1f5fe;
+  --bg-footer: #bbdefb;
+  --bg-input: #86c3f5;
+  --errors: #ef5050;
+  --main-typography: #0342a0;
+  --shadow-hover: rgba(66, 165, 245, 0.8);
+  --shadow-social: rgba(66, 165, 245, 0.8);
 
   color: var(--main-typography);
   background: linear-gradient(0deg, var(--deep-blue) 0%, var(--dark-blue) 100%);

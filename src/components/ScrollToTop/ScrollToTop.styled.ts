@@ -16,12 +16,12 @@ export const ScrollToTopButton = styled.button`
   z-index: 999;
 
   & svg {
-    fill: var(--dark-blue);
+    fill: var(--main-typography);
   }
 
   &:hover {
     background-color: var(--dark-blue);
-    box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.7);
+    box-shadow: 0px 0px 30px 0px var(--shadow-hover);
 
     & svg {
       fill: var(--light-blue);

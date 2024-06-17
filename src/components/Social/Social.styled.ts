@@ -18,6 +18,10 @@ export const Button = styled.a`
 
   &:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 30px 0px rgba(233, 255, 255, 0.3);
+    box-shadow: 0px 0px 30px 0px var(--shadow-social);
+  }
+
+  & svg {
+    fill: var(--main-typography);
   }
 `;

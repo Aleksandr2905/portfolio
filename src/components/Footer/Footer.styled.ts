@@ -43,11 +43,7 @@ export const Contact = styled.a`
 
   &:hover {
     transform: scale(1.05);
-    color: var(--light-blue);
-
-    & svg {
-      fill: var(--light-blue);
-    }
+    font-weight: 500;
   }
 `;
 

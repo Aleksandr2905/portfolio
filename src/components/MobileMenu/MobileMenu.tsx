@@ -6,6 +6,7 @@ import sprite from "../../assets/icons/sprite.svg";
 import { navigation } from "../../helpers/componentsData";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 const MobileMenu: React.FC<IMobileMenuProps> = ({ onClose }) => {
   const element = useMemo(() => document.createElement("div"), []);
@@ -48,6 +49,7 @@ const MobileMenu: React.FC<IMobileMenuProps> = ({ onClose }) => {
   return createPortal(
     <s.Wrapper onClick={handleBackdrop}>
       <s.Container>
+        <ThemeSwitcher $mobileMenu={true} />
         <s.CloseBtn type="button" onClick={onClose}>
           <svg width={32} height={32}>
             <use href={`${sprite}#close`} />

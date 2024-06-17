@@ -10,6 +10,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ThemeProvider from "./providers/ThemeProvider";
 
 function App() {
   const { hash } = useLocation();
@@ -45,7 +46,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider>
       <Header />
       <main>
         <Hero />
@@ -57,7 +58,7 @@ function App() {
         <ScrollToTop />
       </main>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

@@ -5,6 +5,7 @@ import sprite from "../../assets/icons/sprite.svg";
 import * as s from "./Header.styled";
 import Burger from "../Burger/Burger";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -29,7 +30,10 @@ const Header: React.FC = () => {
                 {t(title)}
               </s.Button>
             ))}
-            <LanguageSwitcher />
+            <s.SwitchersBlock>
+              <LanguageSwitcher />
+              <ThemeSwitcher />
+            </s.SwitchersBlock>
           </>
         )}
       </s.NavBlock>
