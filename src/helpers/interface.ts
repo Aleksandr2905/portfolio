@@ -1,6 +1,6 @@
 export interface INavigate {
   href: string;
-  title: string;
+  title: string | any;
 }
 
 export interface ITitleProps {
