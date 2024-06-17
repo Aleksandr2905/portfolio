@@ -27,7 +27,6 @@ export const NavBlock = styled.nav`
 
   @media screen and (min-width: 1440px) {
     padding: 16px 72px;
-    /* justify-content: center; */
     width: 1360px;
   }
 `;

@@ -4,9 +4,12 @@ import * as s from "./LanguageSwitcher.styled";
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    if (lng !== currentLanguage) {
+      i18n.changeLanguage(lng);
+    }
   };
 
   return (
@@ -15,6 +18,7 @@ const LanguageSwitcher: React.FC = () => {
         type="button"
         onClick={() => changeLanguage("ua")}
         aria-label="flag Ukraine"
+        disabled={currentLanguage === "ua"}
       >
         <svg width={28} height={28}>
           <use href={`${sprite}#ua`} />
@@ -24,6 +28,7 @@ const LanguageSwitcher: React.FC = () => {
         type="button"
         onClick={() => changeLanguage("en")}
         aria-label="flag Great Britain"
+        disabled={currentLanguage === "en"}
       >
         <svg width={28} height={28}>
           <use href={`${sprite}#en`} />
