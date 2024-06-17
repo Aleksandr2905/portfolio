@@ -11,6 +11,7 @@ import { individualProjects, teamProjects } from "../../helpers/projectsData";
 import * as s from "./Projects.styled";
 import sprite from "../../assets/icons/sprite.svg";
 import { IProjects } from "../../helpers/interface";
+import { useTranslation } from "react-i18next";
 
 type Direction = "prev" | "next";
 type ProjectType = "individual" | "team";
@@ -20,6 +21,7 @@ const Projects: React.FC = () => {
   const [projectType, setProjectType] = useState<ProjectType>("individual");
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const { t } = useTranslation();
 
   const getSlideCards = (projects: IProjects[]) =>
     projects.map((project) => (
@@ -54,21 +56,21 @@ const Projects: React.FC = () => {
 
   return (
     <Container id="projects">
-      <Title title="Projects" />
+      <Title title={t("projects.title")} />
       <s.BtnNavBlock>
         <s.BtnNavProjects
           type="button"
           onClick={() => handleToggle("individual")}
           $active={projectType === "individual"}
         >
-          Individual
+          {t("projects.btnIndividual")}
         </s.BtnNavProjects>
         <s.BtnNavProjects
           type="button"
           onClick={() => handleToggle("team")}
           $active={projectType === "team"}
         >
-          Team
+          {t("projects.btnTeam")}
         </s.BtnNavProjects>
       </s.BtnNavBlock>
       <s.WrapperSlider>

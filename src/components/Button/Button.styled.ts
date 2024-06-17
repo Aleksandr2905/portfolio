@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Button = styled.a<{ $write?: boolean }>`
   display: flex;
   align-items: center;
-  width: ${(props) => (props.$write ? "202px" : "auto")};
+  min-width: ${(props) => (props.$write ? "202px" : "auto")};
   gap: 24px;
   flex-grow: 1;
   padding: 16px;

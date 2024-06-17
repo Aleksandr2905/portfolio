@@ -4,12 +4,15 @@ import { IMobileMenuProps } from "../../helpers/interface";
 import * as s from "./MobileMenu.styled";
 import sprite from "../../assets/icons/sprite.svg";
 import { navigation } from "../../helpers/componentsData";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const MobileMenu: React.FC<IMobileMenuProps> = ({ onClose }) => {
   const element = useMemo(() => document.createElement("div"), []);
   const modalRootElementRef = useRef<HTMLElement | null>(
     document.getElementById("modal")
   );
+  const { t } = useTranslation();
 
   const handleKeydown = useCallback(
     (event: KeyboardEvent) => {
@@ -52,9 +55,10 @@ const MobileMenu: React.FC<IMobileMenuProps> = ({ onClose }) => {
         </s.CloseBtn>
         {navigation.map(({ href, title }) => (
           <s.Button key={href} href={href} onClick={onClose}>
-            {title}
+            {t(title)}
           </s.Button>
         ))}
+        <LanguageSwitcher />
       </s.Container>
     </s.Wrapper>,
     element

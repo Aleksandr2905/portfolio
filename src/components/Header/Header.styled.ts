@@ -13,7 +13,7 @@ export const NavBlock = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 72px;
+  gap: 64px;
   padding: 16px 40px;
   margin: 0 auto;
   width: 100%;
@@ -27,8 +27,8 @@ export const NavBlock = styled.nav`
 
   @media screen and (min-width: 1440px) {
     padding: 16px 72px;
-    justify-content: center;
-    width: fit-content;
+    /* justify-content: center; */
+    width: 1360px;
   }
 `;
 

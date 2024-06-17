@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { ICardProjectProps } from "../../helpers/interface";
 import Button from "../Button/Button";
 import * as s from "./CardProject.styled";
 
 const CardProject: React.FC<ICardProjectProps> = ({ project }) => {
   const { name, image, description, technologies, gitHub, livePage } = project;
+  const { t } = useTranslation();
+
   return (
     <>
       <s.Wrapper key={name}>
@@ -16,7 +19,7 @@ const CardProject: React.FC<ICardProjectProps> = ({ project }) => {
         />
         <s.Description>
           <s.Name>{name}</s.Name>
-          <s.Text>{description}</s.Text>
+          <s.Text>{t(description)}</s.Text>
           <s.Text>{technologies}</s.Text>
           <s.BtnBlock>
             <Button

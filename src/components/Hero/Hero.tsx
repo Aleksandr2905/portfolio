@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "../../style/GlobalStyles";
 import photo1x from "../../assets/image/photo@1x.jpg";
 import photo2x from "../../assets/image/photo@2x.jpg";
@@ -8,6 +9,8 @@ import Social from "../Social/Social";
 import Button from "../Button/Button";
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <s.Wrapper>
@@ -21,22 +24,22 @@ const Hero: React.FC = () => {
         </picture>
         <s.Profile>
           <s.TitleWrapper>
-            <s.Text>Hello, I’m</s.Text>
-            <s.FullName>OLEKSANDR NATALUKHA</s.FullName>
-            <s.Text>FULLSTACK DEVELOPER</s.Text>
+            <s.Text>{t("hero.hello")}</s.Text>
+            <s.FullName>{t("hero.name")}</s.FullName>
+            <s.Text>{t("hero.specialization")}</s.Text>
           </s.TitleWrapper>
           <s.BtnWrapper>
             <Button
               href="mailto:natalukha.dev@gmail.com"
               ariaLabel="write by email"
-              text="Write"
+              text={t("hero.btnWrite")}
               icon="email"
               write={true}
             />
             <Button
               href="https://drive.google.com/file/d/1GQSXpS4tm5tDfoUpbwMUDCc7A1V7ac8G/view?usp=sharing"
               ariaLabel="link to resume"
-              text="Resume"
+              text={t("hero.btnResume")}
               icon="download"
             />
           </s.BtnWrapper>

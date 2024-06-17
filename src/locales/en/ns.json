@@ -1,0 +1,81 @@
+{
+  "navigation": {
+    "about": "About me",
+    "tech": "Tech Skills",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Hello, I’m",
+    "name": "OLEKSANDR NATALUKHA",
+    "specialization": "FULLSTACK DEVELOPER",
+    "btnWrite": "Write",
+    "btnResume": "Resume"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "text1": "As a passionate Fullstack Developer, I specialize in creating dynamic websites using the latest technologies. My expertise lies in developing highly functional and fast applications that provide seamless experiences across all devices. With a robust understanding of both frontend and backend technologies, I am capable of managing full-cycle projects efficiently.",
+    "text2": "I am dedicated to continuously improving my skills and knowledge to deliver high-quality products. Collaboration, idea exchange, and mutual support are core values I believe lead to the best results. Adherence to deadlines and taking responsibility for my work are principles I uphold in every project.",
+    "text3": "I am not afraid to think outside the box and propose new ideas, always striving to create products of the highest quality. I am constantly searching for new and better ways to implement projects.",
+    "text4": "Open to new ideas and feedback, I view mistakes as opportunities to learn and grow.",
+    "text5": "Life is beautiful, and I aim to enjoy every moment of it."
+  },
+  "tech": {
+    "title": "Tech Skills"
+  },
+  "education": {
+    "title": "Education",
+    "school": "GoIT IT School",
+    "specialist": "Fullstack Developer | 2023 - 2024"
+  },
+  "projects": {
+    "title": "Projects",
+    "btnIndividual": "Individual",
+    "btnTeam": "Team"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Please contact me directly at <1>natalukha.dev@gmail.com</1> or through this form.",
+    "placeholderName": "Your Name",
+    "placeholderEmail": "Your Email",
+    "placeholderMessage": "Your Message",
+    "button": "Send Message",
+    "validation": {
+      "username": {
+        "required": "Field is required",
+        "min": "Minimum 3 characters",
+        "max": "Maximum 64 characters"
+      },
+      "email": {
+        "required": "Field is required",
+        "matches": "Error email"
+      },
+      "message": {
+        "required": "Field is required",
+        "min": "Minimum 3 characters",
+        "max": "Maximum 500 characters"
+      }
+    },
+    "messageSuccess": {
+      "title": "Email sent successfully!",
+      "text": "Dear {{username}}, Thank you for contacting us! I have received your message and will get in touch with you shortly. I will answer all your questions and provide the necessary information. Best regards, Oleksandr",
+      "button": "Ok"
+    },
+    "messageFailure": {
+      "title": "Failed to send email.",
+      "text": "Unfortunately, there was an error in sending your message. Please try again or contact us directly via email. We apologize for any inconvenience and appreciate your understanding.",
+      "button": "Ok"
+    }
+  },
+  "projectsAll": {
+    "pharmacy": "A web application for online pharmacies allows users to order medications over the internet. The application includes 7 pages and offers features such as product filtering, user registration and authentication, adding products to the shopping cart, and order submission with email confirmation. Backend: Node.js and Express. Database: MongoDB.",
+    "nanny": "A web application for finding nannies with filtering options by alphabetical order, price, and popularity. Users can schedule appointments with nannies and add them to favorites, which requires registration or login. The backend is built on Firebase, ensuring reliable authentication and data storage.",
+    "rental": "The website is a car rental in Ukraine. Convenient navigation allows users to navigate through the features of Rental Car easily. The catalog page offers a variety of cars with meticulous filtering by brand, hourly rental price, and mileage",
+    "phonebook": "Phone  Book  is  a  web  application  that  allows  users  to  easily  manage  their  contacts.  From registration and authentication to contact management and search and filtering.",
+    "healthy": "A landing page with information about a business partner in the development and communications of healthy management, building effective healthy management strategies for medical brands. The site features a feedback form that sends data to Telegram and confirms feedback via the user's email.",
+    "waterTracker": "The  application  is  designed  to  track  user's  water  consumption.  Backend: Node.js and Express. Database: MongoDB.",
+    "budgetBoss": "The web application is designed for financial and budget management. It provides users with tools to create, track, and analyze their finances, helping them effectively plan expenses, monitor incomes, and enhance financial literacy. The website implements Google authentication, registration, login functionality and responsive layout.",
+    "tastyTreats": "The website offers a cooking masterclass with the option to choose dish categories, ingredients, cooking time, and step-by-step video guides. The course includes recipes from various countries. Adaptive design, animations, modal windows, and burger menu for ordering."
+  }
+}

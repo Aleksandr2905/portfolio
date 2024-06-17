@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "../../style/GlobalStyles";
 import Title from "../Title/Title";
 import * as s from "./Education.styled";
 
 const Education: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Container id="education">
-      <Title title="Education" />
+      <Title title={t("education.title")} />
       <s.Wrapper>
-        <s.School>IT School GoIT</s.School>
-        <s.Specialist>Fullstack Developer | 2023 - 2024</s.Specialist>
+        <s.School>{t("education.school")}</s.School>
+        <s.Specialist>{t("education.specialist")}</s.Specialist>
       </s.Wrapper>
     </Container>
   );

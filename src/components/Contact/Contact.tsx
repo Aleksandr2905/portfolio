@@ -3,17 +3,20 @@ import emailjs from "@emailjs/browser";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { Report } from "notiflix/build/notiflix-report-aio";
-import { schema } from "../../helpers/validations";
+import useValidationSchema from "../../helpers/validations";
 import { Container } from "../../style/GlobalStyles";
 import Title from "../Title/Title";
 import * as s from "./Contact.styled";
 import sprite from "../../assets/icons/sprite.svg";
+import { useTranslation, Trans } from "react-i18next";
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-type FormData = yup.InferType<typeof schema>;
+type FormData = yup.InferType<ReturnType<typeof useValidationSchema>>;
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
+  const schema = useValidationSchema();
   const {
     register,
     handleSubmit,
@@ -31,58 +34,60 @@ const Contact: React.FC = () => {
       .then(() => {
         reset();
         Report.success(
-          "Email sent successfully!",
-          `Dear ${username}, Thank you for contacting us! I have received your message and will get in touch with you shortly. I will answer all your questions and provide the necessary information. Best regards, Oleksandr`,
-          "Ok"
+          t("contact.messageSuccess.title"),
+          t("contact.messageSuccess.text", { username }),
+          t("contact.messageSuccess.button")
         );
       })
       .catch((err) => {
         console.error("FAILED...", err);
         Report.failure(
-          "Failed to send email.",
-          "Unfortunately, there was an error in sending your message. Please try again or contact us directly via email. We apologize for any inconvenience and appreciate your understanding.",
-          "Ok"
+          t("contact.messageFailure.title"),
+          t("contact.messageFailure.text"),
+          t("contact.messageFailure.button")
         );
       });
   };
 
   return (
     <Container id="contact">
-      <Title title="Contact" />
+      <Title title={t("contact.title")} />
       <s.Text>
-        Please contact me directly at{" "}
-        <a href="mailto:natalukha.dev@gmail.com">natalukha.dev@gmail.com</a> or
-        through this form.
+        <Trans i18nKey="contact.text">
+          Please contact me directly at
+          <a href="mailto:natalukha.dev@gmail.com">natalukha.dev@gmail.com</a>
+          or through this form.
+        </Trans>
       </s.Text>
       <s.Forma onSubmit={handleSubmit(onSubmit)}>
         <s.WrapperInput>
           <s.Input
             type="text"
-            placeholder="Your Name"
+            placeholder={t("contact.placeholderName")}
             {...register("username")}
             $errors={!!errors.username}
           />
           <s.ErrorText>{errors.username?.message}</s.ErrorText>
         </s.WrapperInput>
-        <div>
+        <s.WrapperInput>
           <s.Input
             type="email"
-            placeholder="Your Email"
+            placeholder={t("contact.placeholderEmail")}
             {...register("email")}
             $errors={!!errors.email}
           />
           <s.ErrorText>{errors.email?.message}</s.ErrorText>
-        </div>
-        <div>
+        </s.WrapperInput>
+        <s.WrapperInput>
           <s.Textarea
-            placeholder="Your Message"
+            placeholder={t("contact.placeholderMessage")}
             {...register("message")}
             $errors={!!errors.message}
           />
           <s.ErrorText>{errors.message?.message}</s.ErrorText>
-        </div>
+        </s.WrapperInput>
         <s.Button type="submit">
-          Send Message{" "}
+          {t("contact.button")}{" "}
           <svg width={24} height={24}>
             <use href={`${sprite}#email`} />
           </svg>
