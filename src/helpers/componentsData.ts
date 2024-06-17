@@ -1,28 +1,35 @@
-import { IAbout, INavigate, ISocial, ITechSkills } from "./interface";
+import {
+  AboutTitle,
+  IAbout,
+  INavigate,
+  ISocial,
+  ITechSkills,
+  NavigationTitle,
+} from "./interface";
 
 export const navigation: INavigate[] = [
-  { href: "#about", title: "navigation.about" },
-  { href: "#tech", title: "navigation.tech" },
-  { href: "#education", title: "navigation.education" },
-  { href: "#projects", title: "navigation.projects" },
-  { href: "#contact", title: "navigation.contact" },
+  { href: "#about", title: NavigationTitle.About },
+  { href: "#tech", title: NavigationTitle.Tech },
+  { href: "#education", title: NavigationTitle.Education },
+  { href: "#projects", title: NavigationTitle.Projects },
+  { href: "#contact", title: NavigationTitle.Contact },
 ];
 
 export const aboutText: IAbout[] = [
   {
-    text: "aboutMe.text1",
+    text: AboutTitle.Text1,
   },
   {
-    text: "aboutMe.text2",
+    text: AboutTitle.Text2,
   },
   {
-    text: "aboutMe.text3",
+    text: AboutTitle.Text3,
   },
   {
-    text: "aboutMe.text4",
+    text: AboutTitle.Text4,
   },
   {
-    text: "aboutMe.text5",
+    text: AboutTitle.Text5,
   },
 ];
 

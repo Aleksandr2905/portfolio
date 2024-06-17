@@ -8,13 +8,13 @@ import waterTracker from "../assets/image/projects/water-tracker.png";
 import budgetBoss from "../assets/image/projects/budget-boss.jpg";
 import tastyTreats from "../assets/image/projects/tasty-treats.jpg";
 
-import { IProjects } from "./interface";
+import { IProjects, ProjectsDescription } from "./interface";
 
 export const individualProjects: IProjects[] = [
   {
     name: "E-Pharmacy",
     image: pharmacy,
-    description: "projectsAll.pharmacy",
+    description: ProjectsDescription.Pharmacy,
     technologies:
       "HTML,  CSS,  JS, React, Redux  Toolkit, React  Hook Form,  MUI, Node.js, Express.js, MongoDB, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/e-pharmacy",
@@ -23,7 +23,7 @@ export const individualProjects: IProjects[] = [
   {
     name: "Nanny.Services",
     image: nanny,
-    description: "projectsAll.nanny",
+    description: ProjectsDescription.Nanny,
     technologies:
       "HTML, CSS, JS, React, Redux Toolkit, Firebase, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/Nanny-Services",
@@ -32,7 +32,7 @@ export const individualProjects: IProjects[] = [
   {
     name: "Rental Car",
     image: rental,
-    description: "projectsAll.rental",
+    description: ProjectsDescription.Rental,
     technologies: "HTML, CSS, JS, React, Redux Toolkit, Rest API",
     gitHub: "https://github.com/Aleksandr2905/rental-car",
     livePage: "https://aleksandr2905.github.io/rental-car",
@@ -40,7 +40,7 @@ export const individualProjects: IProjects[] = [
   {
     name: "Phone Book",
     image: phonebook,
-    description: "projectsAll.phonebook",
+    description: ProjectsDescription.Phonebook,
     technologies: "HTML, CSS, JS, React, Redux Toolkit",
     gitHub: "https://github.com/Aleksandr2905/Phonebook",
     livePage: "https://aleksandr2905.github.io/Phonebook/",
@@ -51,7 +51,7 @@ export const teamProjects: IProjects[] = [
   {
     name: "Healthy Management",
     image: healthy,
-    description: "projectsAll.healthy",
+    description: ProjectsDescription.Healthy,
     technologies:
       "HTML, CSS, JS, React, Redux, Node.js, Express.js, MongoDB, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/healthy-management-project",
@@ -60,7 +60,7 @@ export const teamProjects: IProjects[] = [
   {
     name: "Tracker of water",
     image: waterTracker,
-    description: "projectsAll.waterTracker",
+    description: ProjectsDescription.WaterTracker,
     technologies:
       "HTML, CSS, JS, React, Redux, Node.js, Express.js, MongoDB, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/watertracker-app",
@@ -69,7 +69,7 @@ export const teamProjects: IProjects[] = [
   {
     name: "Budget Boss",
     image: budgetBoss,
-    description: "projectsAll.budgetBoss",
+    description: ProjectsDescription.BudgetBoss,
     technologies: "HTML, CSS, JS, React, Redux, Rest API, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/react-project-budget-boss",
     livePage: "https://aleksandr2905.github.io/react-project-budget-boss",
@@ -77,7 +77,7 @@ export const teamProjects: IProjects[] = [
   {
     name: "Tasty Treats",
     image: tastyTreats,
-    description: "projectsAll.tastyTreats",
+    description: ProjectsDescription.TastyTreats,
     technologies: "HTML, CSS, JS, REST API, Parcel",
     gitHub: "https://github.com/Aleksandr2905/js-project-team",
     livePage: "https://aleksandr2905.github.io/js-project-team/index.html",

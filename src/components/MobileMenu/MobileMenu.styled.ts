@@ -28,6 +28,7 @@ export const Container = styled.div`
   right: 0;
   background: linear-gradient(0deg, var(--deep-blue) 0%, var(--dark-blue) 100%);
 `;
+
 export const CloseBtn = styled.button`
   position: absolute;
   top: 40px;
