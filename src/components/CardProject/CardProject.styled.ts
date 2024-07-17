@@ -16,8 +16,7 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 1440px) {
     padding: 32px;
     max-width: 1108px;
-    height: 395px;
-    height: auto;
+    height: 355px;
     flex-wrap: nowrap;
   }
 `;
@@ -52,7 +51,7 @@ export const Description = styled.div`
 
 export const Name = styled.h3`
   font-family: Montserrat, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   line-height: normal;
   color: var(--main-typography);

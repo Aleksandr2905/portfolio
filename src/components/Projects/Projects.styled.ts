@@ -9,47 +9,6 @@ export const WrapperSlider = styled.div`
   }
 `;
 
-export const BtnNavBlock = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  max-width: 768px;
-  margin: 0 auto 28px;
-
-  @media screen and (min-width: 1440px) {
-    max-width: 1108px;
-  }
-`;
-
-export const BtnNavProjects = styled.button<{ $active: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  width: fit-content;
-  padding: 12px 24px;
-  justify-content: center;
-  border: none;
-  border-radius: 16px;
-  background: ${(props) =>
-    props.$active
-      ? `var(--dark-blue)`
-      : "linear-gradient(180deg, rgba(0, 4, 40, 0.20) -102.68%, rgba(46, 152, 242, 0.20) 58.93%)"};
-  color: ${(props) =>
-    props.$active ? `var(--main-typography)` : `var(--main-typography)`};
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: normal;
-  transition: all 0.5s;
-
-  &:hover {
-    transform: scale(1.05);
-    background: var(--dark-blue);
-    color: var(--main-typography);
-    box-shadow: 0px 0px 30px 0px var(--shadow-hover);
-  }
-`;
-
 export const ButtonSlider = styled.button<{
   $left: boolean;
   disabled?: boolean;

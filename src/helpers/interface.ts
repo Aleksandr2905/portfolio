@@ -56,19 +56,6 @@ export enum ProjectsDescription {
   TastyTreats = "projectsAll.tastyTreats",
 }
 
-export interface IProjects {
-  name: string;
-  image: string;
-  description: ProjectsDescription;
-  technologies: string;
-  gitHub: string;
-  livePage: string;
-}
-
-export interface ICardProjectProps {
-  project: IProjects;
-}
-
 export interface IMobileMenuProps {
   onClose: () => void;
 }

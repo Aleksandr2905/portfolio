@@ -8,9 +8,9 @@ import waterTracker from "../assets/image/projects/water-tracker.png";
 import budgetBoss from "../assets/image/projects/budget-boss.jpg";
 import tastyTreats from "../assets/image/projects/tasty-treats.jpg";
 
-import { IProjects, ProjectsDescription } from "./interface";
+import { ProjectsDescription } from "./interface";
 
-export const individualProjects: IProjects[] = [
+export const projects = [
   {
     name: "E-Pharmacy",
     image: pharmacy,
@@ -30,25 +30,15 @@ export const individualProjects: IProjects[] = [
     livePage: "https://nanny-services-one.vercel.app/",
   },
   {
-    name: "Rental Car",
-    image: rental,
-    description: ProjectsDescription.Rental,
-    technologies: "HTML, CSS, JS, React, Redux Toolkit, Rest API",
-    gitHub: "https://github.com/Aleksandr2905/rental-car",
-    livePage: "https://aleksandr2905.github.io/rental-car",
+    name: "Tracker of water",
+    image: waterTracker,
+    description: ProjectsDescription.WaterTracker,
+    technologies:
+      "HTML, CSS, JS, React, Redux, Node.js, Express.js, MongoDB, Styled Components",
+    gitHub: "https://github.com/Aleksandr2905/watertracker-app",
+    livePage: "https://waterbot-app.vercel.app/",
   },
-  {
-    name: "Phone Book",
-    image: phonebook,
-    description: ProjectsDescription.Phonebook,
-    technologies: "HTML, CSS, JS, React, Redux Toolkit",
-    gitHub: "https://github.com/Aleksandr2905/Phonebook",
-    livePage: "https://aleksandr2905.github.io/Phonebook/",
-  },
-];
-
-export const teamProjects: IProjects[] = [
-  {
+   {
     name: "Healthy Management",
     image: healthy,
     description: ProjectsDescription.Healthy,
@@ -58,15 +48,14 @@ export const teamProjects: IProjects[] = [
     livePage: "https://healthymanagement.com.ua/",
   },
   {
-    name: "Tracker of water",
-    image: waterTracker,
-    description: ProjectsDescription.WaterTracker,
-    technologies:
-      "HTML, CSS, JS, React, Redux, Node.js, Express.js, MongoDB, Styled Components",
-    gitHub: "https://github.com/Aleksandr2905/watertracker-app",
-    livePage: "https://waterbot-app.vercel.app/",
+    name: "Rental Car",
+    image: rental,
+    description: ProjectsDescription.Rental,
+    technologies: "HTML, CSS, JS, React, Redux Toolkit, Rest API",
+    gitHub: "https://github.com/Aleksandr2905/rental-car",
+    livePage: "https://aleksandr2905.github.io/rental-car",
   },
-  {
+   {
     name: "Budget Boss",
     image: budgetBoss,
     description: ProjectsDescription.BudgetBoss,
@@ -81,5 +70,13 @@ export const teamProjects: IProjects[] = [
     technologies: "HTML, CSS, JS, REST API, Parcel",
     gitHub: "https://github.com/Aleksandr2905/js-project-team",
     livePage: "https://aleksandr2905.github.io/js-project-team/index.html",
+  },
+  {
+    name: "Phone Book",
+    image: phonebook,
+    description: ProjectsDescription.Phonebook,
+    technologies: "HTML, CSS, JS, React, Redux Toolkit",
+    gitHub: "https://github.com/Aleksandr2905/Phonebook",
+    livePage: "https://aleksandr2905.github.io/Phonebook/",
   },
 ];

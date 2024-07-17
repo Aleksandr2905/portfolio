@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
@@ -7,28 +7,31 @@ import "swiper/css/navigation";
 import { Container } from "../../style/GlobalStyles";
 import CardProject from "../CardProject/CardProject";
 import Title from "../Title/Title";
-import { individualProjects, teamProjects } from "../../helpers/projectsData";
+import { projects } from "../../helpers/projectsData";
 import * as s from "./Projects.styled";
 import sprite from "../../assets/icons/sprite.svg";
-import { IProjects } from "../../helpers/interface";
 import { useTranslation } from "react-i18next";
 
 type Direction = "prev" | "next";
-type ProjectType = "individual" | "team";
 
 const Projects: React.FC = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
-  const [projectType, setProjectType] = useState<ProjectType>("individual");
-  const [isBeginning, setIsBeginning] = useState(true);
-  const [isEnd, setIsEnd] = useState(false);
+  const [navigationState, setNavigationState] = useState({
+    isBeginning: true,
+    isEnd: false,
+  });
+  const { isBeginning, isEnd } = navigationState;
   const { t } = useTranslation();
 
-  const getSlideCards = (projects: IProjects[]) =>
-    projects.map((project) => (
-      <SwiperSlide key={project.name}>
-        <CardProject project={project} />
-      </SwiperSlide>
-    ));
+  const getSlideCards = useMemo(
+    () =>
+      projects.map((project) => (
+        <SwiperSlide key={project.name}>
+          <CardProject project={project} />
+        </SwiperSlide>
+      )),
+    []
+  );
 
   const handleNavigation = (direction: Direction) => {
     if (swiperInstance) {
@@ -38,41 +41,35 @@ const Projects: React.FC = () => {
     }
   };
 
-  const handleToggle = (type: ProjectType) => {
-    setProjectType(type);
+  const handleSlideChange = () => {
     if (swiperInstance) {
-      swiperInstance.slideTo(0, 0);
-      setIsBeginning(true);
-      setIsEnd(false);
+      setNavigationState({
+        isBeginning: swiperInstance.isBeginning,
+        isEnd: swiperInstance.isEnd,
+      });
     }
   };
 
-  const handleSlideChange = () => {
-    if (swiperInstance) {
-      setIsBeginning(swiperInstance.isBeginning);
-      setIsEnd(swiperInstance.isEnd);
-    }
-  };
+  const SvgButton: React.FC<{ direction: Direction; disabled: boolean }> = ({
+    direction,
+    disabled,
+  }) => (
+    <s.ButtonSlider
+      type="button"
+      onClick={() => handleNavigation(direction)}
+      $left={direction === "prev"}
+      aria-label={`button-${direction}`}
+      disabled={disabled}
+    >
+      <svg width={24} height={24}>
+        <use href={`${sprite}#arrow`} />
+      </svg>
+    </s.ButtonSlider>
+  );
 
   return (
     <Container id="projects">
       <Title title={t("projects.title")} />
-      <s.BtnNavBlock>
-        <s.BtnNavProjects
-          type="button"
-          onClick={() => handleToggle("individual")}
-          $active={projectType === "individual"}
-        >
-          {t("projects.btnIndividual")}
-        </s.BtnNavProjects>
-        <s.BtnNavProjects
-          type="button"
-          onClick={() => handleToggle("team")}
-          $active={projectType === "team"}
-        >
-          {t("projects.btnTeam")}
-        </s.BtnNavProjects>
-      </s.BtnNavBlock>
       <s.WrapperSlider>
         <Swiper
           onSwiper={setSwiperInstance}
@@ -82,32 +79,10 @@ const Projects: React.FC = () => {
           centeredSlidesBounds={true}
           onSlideChange={handleSlideChange}
         >
-          {projectType === "individual"
-            ? getSlideCards(individualProjects)
-            : getSlideCards(teamProjects)}
+          {getSlideCards}
         </Swiper>
-        <s.ButtonSlider
-          type="button"
-          onClick={() => handleNavigation("prev")}
-          $left={true}
-          aria-label="button-prev"
-          disabled={isBeginning}
-        >
-          <svg width={24} height={24}>
-            <use href={`${sprite}#arrow`} />
-          </svg>
-        </s.ButtonSlider>
-        <s.ButtonSlider
-          type="button"
-          onClick={() => handleNavigation("next")}
-          $left={false}
-          aria-label="button-next"
-          disabled={isEnd}
-        >
-          <svg width={24} height={24}>
-            <use href={`${sprite}#arrow`} />
-          </svg>
-        </s.ButtonSlider>
+        <SvgButton direction="prev" disabled={isBeginning} />
+        <SvgButton direction="next" disabled={isEnd} />
       </s.WrapperSlider>
     </Container>
   );
