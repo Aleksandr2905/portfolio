@@ -59,7 +59,7 @@ export const Name = styled.h3`
 
 export const Text = styled.p`
   font-family: Montserrat, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
   color: var(--main-typography);

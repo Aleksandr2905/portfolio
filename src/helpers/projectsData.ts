@@ -28,7 +28,7 @@ export const projects = [
     image: pratsia,
     description: ProjectsDescription.Pratsia,
     technologies:
-      "HTML, CSS, JS, React, React Hook Form, Yup, EmailJS, React Responsive, GSAP, Styled Components",
+      "HTML, CSS, JS, React, React Hook Form, Yup, i18next, EmailJS, React Responsive, GSAP, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/pratsia-lending",
     livePage: "https://pratsia.de",
   },
