@@ -30,9 +30,7 @@
     "specialist": "Fullstack Developer | 2023 - 2024"
   },
   "projects": {
-    "title": "Projects",
-    "btnIndividual": "Individual",
-    "btnTeam": "Team"
+    "title": "Projects"
   },
   "contact": {
     "title": "Contact",
@@ -69,8 +67,10 @@
     }
   },
   "projectsAll": {
+    "ecosolution": "Ecosolution landing page, adaptive and cross-browser layout, validated form, infinite slider.",
     "pharmacy": "Web application for online pharmacies - contains 7 pages and offers features such as product filtering, user registration and authentication, adding products to the shopping cart, and sending the order with confirmation by email. Backend: Node.js, Express, MongoDB.",
     "nanny": "A web app for finding sitters, filtering by alphabet, price, and popularity. You can schedule appointments with sitters and add them to your favorites, which requires registration or login. The server is built on Firebase, which ensures reliable authentication and data storage.",
+    "apeNft": "The landing page is a description of the “Yacht Ape” NFT collection, which offers unique digital monkeys for NFT ownership.",
     "rental": "The website is a car rental in Ukraine. Convenient navigation allows users to navigate through the features of Rental Car easily. The catalog page offers a variety of cars with meticulous filtering by brand, hourly rental price, and mileage",
     "phonebook": "Phone  Book  is  a  web  application  that  allows  users  to  easily  manage  their  contacts.  From registration and authentication to contact management and search and filtering.",
     "healthy": "A landing page with information about a business partner in the development and communications of healthy management, building effective healthy management strategies for medical brands. The site features a feedback form that sends data to Telegram and confirms feedback via the user's email.",

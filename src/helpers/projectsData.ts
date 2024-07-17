@@ -1,5 +1,7 @@
+import ecosolution from "../assets/image/projects/ecosolution.jpg";
 import pharmacy from "../assets/image/projects/e-pharmacy.png";
 import nanny from "../assets/image/projects/nanny.jpg";
+import apeNft from '../assets/image/projects/ape-nft.jpg'
 import rental from "../assets/image/projects/rental-car.jpg";
 import phonebook from "../assets/image/projects/phonebook.jpg";
 
@@ -11,6 +13,15 @@ import tastyTreats from "../assets/image/projects/tasty-treats.jpg";
 import { ProjectsDescription } from "./interface";
 
 export const projects = [
+  {
+    name: "Ecosolution",
+    image: ecosolution,
+    description: ProjectsDescription.Ecosolution,
+    technologies:
+      "HTML, CSS, JS, React, React Hook Form, Yup, React Responsive, Swiper, GSAP, Notiflix, Styled Components",
+    gitHub: "https://github.com/Aleksandr2905/ecosolution",
+    livePage: "https://ecosolution-greenergy.vercel.app",
+  },
   {
     name: "E-Pharmacy",
     image: pharmacy,
@@ -28,6 +39,15 @@ export const projects = [
       "HTML, CSS, JS, React, Redux Toolkit, Firebase, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/Nanny-Services",
     livePage: "https://nanny-services-one.vercel.app/",
+  },
+  {
+    name: "Ape NFT",
+    image: apeNft,
+    description: ProjectsDescription.ApeNft,
+    technologies:
+      "HTML, CSS, JS, React, React Hook Form, Yup, React Responsive, Swiper, Notiflix, Styled Components",
+    gitHub: "https://github.com/Aleksandr2905/ape-nft",
+    livePage: "https://ape-nft-flame.vercel.app/",
   },
   {
     name: "Tracker of water",
