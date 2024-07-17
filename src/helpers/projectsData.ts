@@ -1,4 +1,5 @@
 import ecosolution from "../assets/image/projects/ecosolution.jpg";
+import pratsia from "../assets/image/projects/pratsia.jpg";
 import pharmacy from "../assets/image/projects/e-pharmacy.png";
 import nanny from "../assets/image/projects/nanny.jpg";
 import apeNft from '../assets/image/projects/ape-nft.jpg'
@@ -21,6 +22,15 @@ export const projects = [
       "HTML, CSS, JS, React, React Hook Form, Yup, React Responsive, Swiper, GSAP, Notiflix, Styled Components",
     gitHub: "https://github.com/Aleksandr2905/ecosolution",
     livePage: "https://ecosolution-greenergy.vercel.app",
+  },
+   {
+    name: "Pratsia",
+    image: pratsia,
+    description: ProjectsDescription.Pratsia,
+    technologies:
+      "HTML, CSS, JS, React, React Hook Form, Yup, EmailJS, React Responsive, GSAP, Styled Components",
+    gitHub: "https://github.com/Aleksandr2905/pratsia-lending",
+    livePage: "https://pratsia.de",
   },
   {
     name: "E-Pharmacy",

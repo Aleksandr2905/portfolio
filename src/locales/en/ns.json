@@ -68,6 +68,7 @@
   },
   "projectsAll": {
     "ecosolution": "Ecosolution landing page, adaptive and cross-browser layout, validated form, infinite slider.",
+     "pratsia": "The landing page of Pratsia is a recruitment agency that specialises in recruiting highly qualified specialists from Ukraine to work in Germany. We have implemented animation when the page loads, adaptive layout, form validation, and email notifications.",
     "pharmacy": "Web application for online pharmacies - contains 7 pages and offers features such as product filtering, user registration and authentication, adding products to the shopping cart, and sending the order with confirmation by email. Backend: Node.js, Express, MongoDB.",
     "nanny": "A web app for finding sitters, filtering by alphabet, price, and popularity. You can schedule appointments with sitters and add them to your favorites, which requires registration or login. The server is built on Firebase, which ensures reliable authentication and data storage.",
     "apeNft": "The landing page is a description of the “Yacht Ape” NFT collection, which offers unique digital monkeys for NFT ownership.",

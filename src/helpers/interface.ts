@@ -47,6 +47,7 @@ export interface ITechSkills {
 
 export enum ProjectsDescription {
   Ecosolution = "projectsAll.ecosolution",
+  Pratsia = "projectsAll.pratsia",
   Pharmacy = "projectsAll.pharmacy",
   Nanny = "projectsAll.nanny",
   ApeNft = "projectsAll.apeNft",
