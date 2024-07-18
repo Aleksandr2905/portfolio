@@ -13,8 +13,8 @@ const CardProject: React.FC<ICardProjectProps> = ({ project }) => {
         <s.Image
           src={image}
           alt="Photo project"
-          width={239}
-          height={132}
+          width='100%'
+          height='100%'
           loading="lazy"
         />
         <s.Description>
