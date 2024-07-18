@@ -34,10 +34,10 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 608px;
+  height: 460px;
 
   @media screen and (min-width: 475px) {
-    height: 460px;
+    height: 290px;
   }
 
   @media screen and (min-width: 768px) {

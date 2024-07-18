@@ -1,15 +1,15 @@
-import ecosolution from "../assets/image/projects/ecosolution.jpg";
-import pratsia from "../assets/image/projects/pratsia.jpg";
-import pharmacy from "../assets/image/projects/e-pharmacy.png";
-import nanny from "../assets/image/projects/nanny.jpg";
-import apeNft from '../assets/image/projects/ape-nft.jpg'
-import rental from "../assets/image/projects/rental-car.jpg";
-import phonebook from "../assets/image/projects/phonebook.jpg";
+import ecosolution from "../assets/image/projects/ecosolution.webp";
+import pratsia from "../assets/image/projects/pratsia.webp";
+import pharmacy from "../assets/image/projects/e-pharmacy.webp";
+import nanny from "../assets/image/projects/nanny.webp";
+import apeNft from '../assets/image/projects/ape-nft.webp'
+import rental from "../assets/image/projects/rental-car.webp";
+import phonebook from "../assets/image/projects/phonebook.webp";
 
-import healthy from "../assets/image/projects/healthy-management.jpg";
-import waterTracker from "../assets/image/projects/water-tracker.png";
-import budgetBoss from "../assets/image/projects/budget-boss.jpg";
-import tastyTreats from "../assets/image/projects/tasty-treats.jpg";
+import healthy from "../assets/image/projects/healthy-management.webp";
+import waterTracker from "../assets/image/projects/water-tracker.webp";
+import budgetBoss from "../assets/image/projects/budget-boss.webp";
+import tastyTreats from "../assets/image/projects/tasty-treats.webp";
 
 import { ProjectsDescription } from "./interface";
 
