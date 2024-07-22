@@ -176,7 +176,7 @@ Report.init({
   zindex: 4002,
   backOverlay: true,
   backOverlayColor: "rgba(0,0,0,0.5)",
-  backOverlayClickToClose: false,
+  backOverlayClickToClose: true,
   fontFamily: "Montserrat, sans-serif",
   svgSize: "110px",
   plainText: true,
