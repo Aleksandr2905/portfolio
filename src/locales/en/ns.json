@@ -67,6 +67,7 @@
     }
   },
   "projectsAll": {
+    "puppyDiary": "Puppy Diary: Puzzle Blast - the landing page offers an engaging interface for desktop and mobile users. Its modern design includes a handy Swiper slider to present game updates and events, which allows for easy switching between images. The mobile menu provides quick navigation, allowing access to all sections without unnecessary clicks. Individual project",
     "ecosolution": "Ecosolution landing page, adaptive and cross-browser layout, validated form, infinite slider. Individual project",
     "pratsia": "The landing page of Pratsia is a recruitment agency that specializes in recruiting highly qualified specialists from Ukraine to work in Germany. We have implemented animation when the page loads, adaptive layout, validated form, sending notifications by email, translation into 3 languages. Team project",
     "pharmacy": "Web application for online pharmacies - contains 7 pages and offers features such as product filtering, user registration and authentication, adding products to the shopping cart, and sending the order with confirmation by email. Backend: Node.js, Express, MongoDB. Individual project",

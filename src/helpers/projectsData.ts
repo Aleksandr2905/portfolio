@@ -1,3 +1,4 @@
+import puppyDiary from "../assets/image/projects/puppy-diary.webp";
 import ecosolution from "../assets/image/projects/ecosolution.webp";
 import pratsia from "../assets/image/projects/pratsia.webp";
 import pharmacy from "../assets/image/projects/e-pharmacy.webp";
@@ -14,6 +15,15 @@ import tastyTreats from "../assets/image/projects/tasty-treats.webp";
 import { ProjectsDescription } from "./interface";
 
 export const projects = [
+  {
+    name: "Puppy Diary",
+    image: puppyDiary,
+    description: ProjectsDescription.PuppyDiary,
+    technologies:
+      "HTML, CSS, SASS, JS, Swiper",
+    gitHub: "https://github.com/Aleksandr2905/puppy-diary",
+    livePage: "https://puppy-diary.vercel.app",
+  },
   {
     name: "Ecosolution",
     image: ecosolution,
