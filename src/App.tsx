@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./i18n";
 import Header from "./components/Header/Header";
@@ -46,6 +46,8 @@ function App() {
   }, []);
 
   return (
+    <>
+    <Suspense fallback={<div>LOADING...</div>}>
     <ThemeProvider>
       <Header />
       <main>
@@ -59,6 +61,8 @@ function App() {
       </main>
       <Footer />
     </ThemeProvider>
+    </Suspense>
+    </>
   );
 }
 
