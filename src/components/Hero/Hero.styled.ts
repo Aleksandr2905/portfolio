@@ -15,11 +15,20 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const PhotoContainer = styled.div`
+  width: 430px;
+  height: 559px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  overflow: hidden;
+`;
+
 export const Photo = styled.img`
-  min-width: 327px;
-  max-width: 430px;
-  min-height: 425px;
-  max-height: 559px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 24px;
 `;
 

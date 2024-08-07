@@ -14,14 +14,16 @@ const Hero: React.FC = () => {
   return (
     <Container>
       <s.Wrapper>
-        <picture>
-          <source
-            srcSet={`${photo1xWebp} 1x, ${photo2xWebp} 2x`}
-            type="image/webp"
-          />
-          <source srcSet={`${photo1x} 1x, ${photo2x} 2x`} type="image/jpeg" />
-          <s.Photo src={photo1x} alt="Oleksandr" width={430} height={559} />
-        </picture>
+        <s.PhotoContainer>
+          <picture>
+            <source
+              srcSet={`${photo1xWebp} 1x, ${photo2xWebp} 2x`}
+              type="image/webp"
+            />
+            <source srcSet={`${photo1x} 1x, ${photo2x} 2x`} type="image/jpeg" />
+            <s.Photo src={photo1x} alt="Oleksandr" width={430} height={559} />
+          </picture>
+        </s.PhotoContainer>
         <s.Profile>
           <s.TitleWrapper>
             <s.Text>{t("hero.hello")}</s.Text>
