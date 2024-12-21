@@ -7,12 +7,6 @@ const Footer: React.FC = () => {
     <s.Wrapper id="footer">
       <s.ContentBlock>
         <s.ContactsBlock>
-          <s.Contact href="tel:+380660578505">
-            <svg width={24} height={24}>
-              <use href={`${sprite}#call`} />
-            </svg>
-            +380 660 578 505
-          </s.Contact>
           <s.Contact href="mailto:natalukha.dev@gmail.com">
             <svg width={24} height={24}>
               <use href={`${sprite}#email`} />
